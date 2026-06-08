@@ -1,48 +1,54 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"3379 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3379:     struct {
-[s S139 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S139 . LATE0 LATE1 LATE2 ]
-"3384
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3384:     struct {
-[s S140 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S140 . LE0 LE1 LE2 ]
-"3378
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3378: typedef union {
-[u S138 `S139 1 `S140 1 ]
-[n S138 . . . ]
-"3390
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3390: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
-[v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
-"3261
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3261: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
-[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"3856 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3856:     struct {
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
+"3864
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3864:     struct {
+[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S155 . RC0 RC1 RC2 . RC6 RC7 ]
+"3855
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3855: typedef union {
+[u S153 `S154 1 `S155 1 ]
+[n S153 . . . ]
+"3873
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3873: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS153 ~T0 @X0 0 e@3988 ]
+"5424
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 5424: extern volatile unsigned char SPBRG __attribute__((address(0xFAF)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@4015 ]
+"5144
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 5144: extern volatile unsigned char TXSTA __attribute__((address(0xFAC)));
+[v _TXSTA `Vuc ~T0 @X0 0 e@4012 ]
+"4934
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4934: extern volatile unsigned char RCSTA __attribute__((address(0xFAB)));
+[v _RCSTA `Vuc ~T0 @X0 0 e@4011 ]
+"4472
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4472:     struct {
+[s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S178 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
+"4482
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4482:     struct {
+[s S179 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S179 . . TX1IF RC1IF . PSPIF ]
+"4471
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4471: typedef union {
+[u S177 `S178 1 `S179 1 ]
+[n S177 . . . ]
+"4490
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4490: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS177 ~T0 @X0 0 e@3998 ]
+"5400
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 5400: extern volatile unsigned char TXREG __attribute__((address(0xFAD)));
+[v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
+"3071
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3071: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
+[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
 [v F205 `(v ~T0 @X0 1 tf1`ul ]
 "20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
 [v __delay `JF205 ~T0 @X0 0 e ]
 [p i __delay ]
-"4232 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4232:     struct {
-[s S166 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S166 . TRISE0 TRISE1 TRISE2 ]
-"4237
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4237:     struct {
-[s S167 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S167 . RE0 RE1 RE2 ]
-"4231
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4231: typedef union {
-[u S165 `S166 1 `S167 1 ]
-[n S165 . . . ]
-"4243
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4243: extern volatile TRISEbits_t TRISEbits __attribute__((address(0xF96)));
-[v _TRISEbits `VS165 ~T0 @X0 0 e@3990 ]
-"3999
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3999: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
-[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
-"3071
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3071: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
-[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
-"2457
+"2457 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 2457:     struct {
 [s S107 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S107 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
@@ -63,21 +69,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _PORTBbits `VS106 ~T0 @X0 0 e@3969 ]
 [t ~ __interrupt . k ]
 [t T36 __interrupt ]
-"4472
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4472:     struct {
-[s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S178 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
-"4482
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4482:     struct {
-[s S179 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S179 . . TX1IF RC1IF . PSPIF ]
-"4471
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4471: typedef union {
-[u S177 `S178 1 `S179 1 ]
-[n S177 . . . ]
-"4490
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 4490: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
-[v _PIR1bits `VS177 ~T0 @X0 0 e@3998 ]
 "3189
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3189:     struct {
 [s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -102,8 +93,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "55 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdlib.h
 [; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdlib.h: 55: int rand (void);
 [v _rand `(i ~T0 @X0 0 ef ]
+"121 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h
+[; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"3261 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3261: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
 [p mainexit ]
-"3623 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
+"3623
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3623: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
 [v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "8509
@@ -125,21 +122,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8530
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 8530: extern volatile INTCON2bits_t INTCON2bits __attribute__((address(0xFF1)));
 [v _INTCON2bits `VS355 ~T0 @X0 0 e@4081 ]
-"3856
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3856:     struct {
-[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S154 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
-"3864
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3864:     struct {
-[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S155 . RC0 RC1 RC2 . RC6 RC7 ]
-"3855
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3855: typedef union {
-[u S153 `S154 1 `S155 1 ]
-[n S153 . . . ]
-"3873
-[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3873: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
-[v _TRISCbits `VS153 ~T0 @X0 0 e@3988 ]
+"3999
+[; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 3999: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "7413
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 7413: extern volatile unsigned char T1CON __attribute__((address(0xFCD)));
 [v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
@@ -180,9 +165,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "56 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdlib.h
 [; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdlib.h: 56: void srand (unsigned);
 [v _srand `(v ~T0 @X0 0 ef1`ui ]
-"121 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h
-[; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "52 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h: 52: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -695,130 +677,104 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 0FFFh ;# ">
 "7 blackjack.c
 [p x FOSC  =  HS   WDT  =  OFF   LVP  =  OFF   PBADEN  =  OFF ]
-"19
-[; ;blackjack.c: 19: void Lcd_Cmd(unsigned char cmd) {
-[v _Lcd_Cmd `(v ~T0 @X0 1 ef1`uc ]
+"52
+[; ;blackjack.c: 52: void UART_Init(){
+[v _UART_Init `(v ~T0 @X0 1 ef ]
 {
-[e :U _Lcd_Cmd ]
-[v _cmd `uc ~T0 @X0 1 r1 ]
+[e :U _UART_Init ]
 [f ]
-"20
-[; ;blackjack.c: 20:     LATEbits.LATE0 = 0;
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"21
-[; ;blackjack.c: 21:     LATD = (LATD & 0x0F) | (cmd & 0xF0);
-[e = _LATD -> | & -> _LATD `i -> 15 `i & -> _cmd `i -> 240 `i `uc ]
-"22
-[; ;blackjack.c: 22:     LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"23
-[; ;blackjack.c: 23:     LATD = (LATD & 0x0F) | (cmd << 4);
-[e = _LATD -> | & -> _LATD `i -> 15 `i << -> _cmd `i -> 4 `i `uc ]
-"24
-[; ;blackjack.c: 24:     LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"25
-[; ;blackjack.c: 25:     _delay((unsigned long)((2)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"26
-[; ;blackjack.c: 26: }
+"53
+[; ;blackjack.c: 53:     TRISCbits.TRISC6 = 0;
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"54
+[; ;blackjack.c: 54:     TRISCbits.TRISC7 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
+"55
+[; ;blackjack.c: 55:     SPBRG = 129;
+[e = _SPBRG -> -> 129 `i `uc ]
+"56
+[; ;blackjack.c: 56:     TXSTA = 0x24;
+[e = _TXSTA -> -> 36 `i `uc ]
+"57
+[; ;blackjack.c: 57:     RCSTA = 0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"58
+[; ;blackjack.c: 58: }
 [e :UE 393 ]
 }
-"28
-[; ;blackjack.c: 28: void Lcd_Write(unsigned char data) {
-[v _Lcd_Write `(v ~T0 @X0 1 ef1`uc ]
+"60
+[; ;blackjack.c: 60: void Next_Send(const char* cmd){
+[v _Next_Send `(v ~T0 @X0 1 ef1`*Cuc ]
 {
-[e :U _Lcd_Write ]
-[v _data `uc ~T0 @X0 1 r1 ]
+[e :U _Next_Send ]
+[v _cmd `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-"29
-[; ;blackjack.c: 29:     LATEbits.LATE0 = 1;
-[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-"30
-[; ;blackjack.c: 30:     LATD = (LATD & 0x0F) | (data & 0xF0);
-[e = _LATD -> | & -> _LATD `i -> 15 `i & -> _data `i -> 240 `i `uc ]
-"31
-[; ;blackjack.c: 31:     LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"32
-[; ;blackjack.c: 32:     LATD = (LATD & 0x0F) | (data << 4);
-[e = _LATD -> | & -> _LATD `i -> 15 `i << -> _data `i -> 4 `i `uc ]
-"33
-[; ;blackjack.c: 33:     LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"34
-[; ;blackjack.c: 34:     _delay((unsigned long)((2)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"35
-[; ;blackjack.c: 35: }
+"61
+[; ;blackjack.c: 61:     while(*cmd){
+[e $U 395  ]
+[e :U 396 ]
+{
+"62
+[; ;blackjack.c: 62:         while(!PIR1bits.TXIF);
+[e $U 398  ]
+[e :U 399 ]
+[e :U 398 ]
+[e $ ! != -> . . _PIR1bits 0 4 `i -> 0 `i 399  ]
+[e :U 400 ]
+"63
+[; ;blackjack.c: 63:         TXREG = *cmd++;
+[e = _TXREG -> *U ++ _cmd * -> -> 1 `i `x -> -> # *U _cmd `i `x `uc ]
+"64
+[; ;blackjack.c: 64:     }
+}
+[e :U 395 ]
+"61
+[; ;blackjack.c: 61:     while(*cmd){
+[e $ != -> *U _cmd `i -> 0 `i 396  ]
+[e :U 397 ]
+"66
+[; ;blackjack.c: 66:     for(int i = 0; i < 3; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 401  ]
+[e $U 402  ]
+[e :U 401 ]
+{
+"67
+[; ;blackjack.c: 67:         while(!PIR1bits.TXIF);
+[e $U 404  ]
+[e :U 405 ]
+[e :U 404 ]
+[e $ ! != -> . . _PIR1bits 0 4 `i -> 0 `i 405  ]
+[e :U 406 ]
+"68
+[; ;blackjack.c: 68:         TXREG = 0xFF;
+[e = _TXREG -> -> 255 `i `uc ]
+"69
+[; ;blackjack.c: 69:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 401  ]
+[e :U 402 ]
+}
+"70
+[; ;blackjack.c: 70: }
 [e :UE 394 ]
 }
-"37
-[; ;blackjack.c: 37: void Lcd_Print(const char* str) {
-[v _Lcd_Print `(v ~T0 @X0 1 ef1`*Cuc ]
-{
-[e :U _Lcd_Print ]
-[v _str `*Cuc ~T0 @X0 1 r1 ]
-[f ]
-"38
-[; ;blackjack.c: 38:     while(*str) Lcd_Write(*str++);
-[e $U 396  ]
-[e :U 397 ]
-[e ( _Lcd_Write (1 -> *U ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x `uc ]
-[e :U 396 ]
-[e $ != -> *U _str `i -> 0 `i 397  ]
-[e :U 398 ]
-"39
-[; ;blackjack.c: 39: }
-[e :UE 395 ]
-}
-"41
-[; ;blackjack.c: 41: void Lcd_Init() {
-[v _Lcd_Init `(v ~T0 @X0 1 ef ]
-{
-[e :U _Lcd_Init ]
-[f ]
-"42
-[; ;blackjack.c: 42:     TRISEbits.TRISE0 = 0; TRISEbits.TRISE1 = 0;
-[e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
-[e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]
-"43
-[; ;blackjack.c: 43:     TRISD &= 0x0F;
-[e =& _TRISD -> -> 15 `i `Vuc ]
-"44
-[; ;blackjack.c: 44:     _delay((unsigned long)((20)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"45
-[; ;blackjack.c: 45:     Lcd_Cmd(0x02); Lcd_Cmd(0x28); Lcd_Cmd(0x0C); Lcd_Cmd(0x01);
-[e ( _Lcd_Cmd (1 -> -> 2 `i `uc ]
-[e ( _Lcd_Cmd (1 -> -> 40 `i `uc ]
-[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"46
-[; ;blackjack.c: 46: }
-[e :UE 399 ]
-}
-"49
-[; ;blackjack.c: 49: char Get_Key() {
+"73
+[; ;blackjack.c: 73: char Get_Key() {
 [v _Get_Key `(uc ~T0 @X0 1 ef ]
 {
 [e :U _Get_Key ]
 [f ]
-[v F3673 `uc ~T0 @X0 -> 4 `i t ]
-[v F3672 `F3673 ~T0 @X0 -> 4 `i s ]
-[i F3672
+[v F3670 `uc ~T0 @X0 -> 4 `i t ]
+[v F3669 `F3670 ~T0 @X0 -> 4 `i s ]
+[i F3669
 :U ..
 :U ..
-"50
-[; ;blackjack.c: 50:     char keys[4][4] =
+"74
+[; ;blackjack.c: 74:     char keys[4][4] =
 -> -> 55 `ui `uc
 -> -> 56 `ui `uc
 -> -> 57 `ui `uc
@@ -844,71 +800,71 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[v F3675 `uc ~T0 @X0 -> 4 `i t ]
-[v _keys `F3675 ~T0 @X0 -> 4 `i a ]
-[e = _keys F3672 ]
-"55
-[; ;blackjack.c: 55:     for(int r=0; r<4; r++) {
+[v F3672 `uc ~T0 @X0 -> 4 `i t ]
+[v _keys `F3672 ~T0 @X0 -> 4 `i a ]
+[e = _keys F3669 ]
+"79
+[; ;blackjack.c: 79:     for(int r=0; r<4; r++) {
 {
 [v _r `i ~T0 @X0 1 a ]
 [e = _r -> 0 `i ]
-[e $ < _r -> 4 `i 401  ]
-[e $U 402  ]
-[e :U 401 ]
+[e $ < _r -> 4 `i 408  ]
+[e $U 409  ]
+[e :U 408 ]
 {
-"56
-[; ;blackjack.c: 56:         LATB = ~(1 << r);
+"80
+[; ;blackjack.c: 80:         LATB = ~(1 << r);
 [e = _LATB -> ~ << -> 1 `i _r `uc ]
-"57
-[; ;blackjack.c: 57:         _delay((unsigned long)((10)*(20000000/4000000.0)));
+"81
+[; ;blackjack.c: 81:         _delay((unsigned long)((10)*(20000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
-"58
-[; ;blackjack.c: 58:         if(!PORTBbits.RB4) return keys[r][0];
-[e $ ! ! != -> . . _PORTBbits 0 4 `i -> 0 `i 404  ]
+"82
+[; ;blackjack.c: 82:         if(!PORTBbits.RB4) return keys[r][0];
+[e $ ! ! != -> . . _PORTBbits 0 4 `i -> 0 `i 411  ]
 [e ) *U + &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux `ui `ux ]
-[e $UE 400  ]
-[e :U 404 ]
-"59
-[; ;blackjack.c: 59:         if(!PORTBbits.RB5) return keys[r][1];
-[e $ ! ! != -> . . _PORTBbits 0 5 `i -> 0 `i 405  ]
+[e $UE 407  ]
+[e :U 411 ]
+"83
+[; ;blackjack.c: 83:         if(!PORTBbits.RB5) return keys[r][1];
+[e $ ! ! != -> . . _PORTBbits 0 5 `i -> 0 `i 412  ]
 [e ) *U + &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux `ui `ux ]
-[e $UE 400  ]
-[e :U 405 ]
-"60
-[; ;blackjack.c: 60:         if(!PORTBbits.RB6) return keys[r][2];
-[e $ ! ! != -> . . _PORTBbits 0 6 `i -> 0 `i 406  ]
+[e $UE 407  ]
+[e :U 412 ]
+"84
+[; ;blackjack.c: 84:         if(!PORTBbits.RB6) return keys[r][2];
+[e $ ! ! != -> . . _PORTBbits 0 6 `i -> 0 `i 413  ]
 [e ) *U + &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux `ui `ux ]
-[e $UE 400  ]
-[e :U 406 ]
-"61
-[; ;blackjack.c: 61:         if(!PORTBbits.RB7) return keys[r][3];
-[e $ ! ! != -> . . _PORTBbits 0 7 `i -> 0 `i 407  ]
+[e $UE 407  ]
+[e :U 413 ]
+"85
+[; ;blackjack.c: 85:         if(!PORTBbits.RB7) return keys[r][3];
+[e $ ! ! != -> . . _PORTBbits 0 7 `i -> 0 `i 414  ]
 [e ) *U + &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _keys * -> -> _r `ui `ux -> * -> # *U &U *U &U _keys `ui -> -> 4 `i `ui `ux `ui `ux ]
-[e $UE 400  ]
-[e :U 407 ]
-"62
-[; ;blackjack.c: 62:     }
+[e $UE 407  ]
+[e :U 414 ]
+"86
+[; ;blackjack.c: 86:     }
 }
 [e ++ _r -> 1 `i ]
-[e $ < _r -> 4 `i 401  ]
-[e :U 402 ]
+[e $ < _r -> 4 `i 408  ]
+[e :U 409 ]
 }
-"63
-[; ;blackjack.c: 63:     return 0;
+"87
+[; ;blackjack.c: 87:     return 0;
 [e ) -> -> 0 `i `uc ]
-[e $UE 400  ]
-"64
-[; ;blackjack.c: 64: }
-[e :UE 400 ]
+[e $UE 407  ]
+"88
+[; ;blackjack.c: 88: }
+[e :UE 407 ]
 }
-"67
-[; ;blackjack.c: 67: volatile uint8_t servo_pos = 15;
+"91
+[; ;blackjack.c: 91: volatile uint8_t servo_pos = 15;
 [v _servo_pos `Vuc ~T0 @X0 1 e ]
 [i _servo_pos
 -> -> 15 `i `uc
 ]
-"68
-[; ;blackjack.c: 68: uint8_t p_score = 0, d_score = 0, lives = 3;
+"92
+[; ;blackjack.c: 92: uint8_t p_score = 0, d_score = 0, lives = 3;
 [v _p_score `uc ~T0 @X0 1 e ]
 [i _p_score
 -> -> 0 `i `uc
@@ -922,232 +878,369 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 3 `i `uc
 ]
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"70
-[; ;blackjack.c: 70: void __attribute__((picinterrupt(("")))) ISR() {
+"94
+[; ;blackjack.c: 94: void __attribute__((picinterrupt(("")))) ISR() {
 [v _ISR `(v ~T36 @X0 1 ef ]
 {
 [e :U _ISR ]
 [f ]
-"71
-[; ;blackjack.c: 71:     if(PIR1bits.TMR1IF) {
-[e $ ! != -> . . _PIR1bits 0 0 `i -> 0 `i 409  ]
+"95
+[; ;blackjack.c: 95:     if(PIR1bits.TMR1IF) {
+[e $ ! != -> . . _PIR1bits 0 0 `i -> 0 `i 416  ]
 {
-"72
-[; ;blackjack.c: 72:         static uint16_t c = 0;
-[v F3686 `us ~T0 @X0 1 s c ]
-[i F3686
+"96
+[; ;blackjack.c: 96:         static uint16_t c = 0;
+[v F3683 `us ~T0 @X0 1 s c ]
+[i F3683
 -> -> 0 `i `us
 ]
-"73
-[; ;blackjack.c: 73:         LATCbits.LATC2 = (c < servo_pos);
-[e = . . _LATCbits 0 2 -> -> < -> F3686 `ui -> _servo_pos `ui `i `uc ]
-"74
-[; ;blackjack.c: 74:         if(++c >= 200) c = 0;
-[e $ ! >= -> =+ F3686 -> -> 1 `i `us `ui -> -> 200 `i `ui 410  ]
-[e = F3686 -> -> 0 `i `us ]
-[e :U 410 ]
-"75
-[; ;blackjack.c: 75:         TMR1H = 0xFF; TMR1L = 0x38; PIR1bits.TMR1IF = 0;
+"97
+[; ;blackjack.c: 97:         LATCbits.LATC2 = (c < servo_pos);
+[e = . . _LATCbits 0 2 -> -> < -> F3683 `ui -> _servo_pos `ui `i `uc ]
+"98
+[; ;blackjack.c: 98:         if(++c >= 200) c = 0;
+[e $ ! >= -> =+ F3683 -> -> 1 `i `us `ui -> -> 200 `i `ui 417  ]
+[e = F3683 -> -> 0 `i `us ]
+[e :U 417 ]
+"99
+[; ;blackjack.c: 99:         TMR1H = 0xFF; TMR1L = 0x38; PIR1bits.TMR1IF = 0;
 [e = _TMR1H -> -> 255 `i `uc ]
 [e = _TMR1L -> -> 56 `i `uc ]
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"76
-[; ;blackjack.c: 76:     }
+"100
+[; ;blackjack.c: 100:     }
 }
-[e :U 409 ]
-"77
-[; ;blackjack.c: 77: }
-[e :UE 408 ]
+[e :U 416 ]
+"101
+[; ;blackjack.c: 101: }
+[e :UE 415 ]
 }
-"80
-[; ;blackjack.c: 80: void Penalty() {
+"104
+[; ;blackjack.c: 104: uint8_t Draw_Card_To_Screen(uint8_t target_p_index) {
+[v _Draw_Card_To_Screen `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _Draw_Card_To_Screen ]
+[v _target_p_index `uc ~T0 @X0 1 r1 ]
+[f ]
+"106
+[; ;blackjack.c: 106:     uint8_t raw_card = (rand() % 13) + 1;
+[v _raw_card `uc ~T0 @X0 1 a ]
+[e = _raw_card -> + % ( _rand ..  -> 13 `i -> 1 `i `uc ]
+"108
+[; ;blackjack.c: 108:     uint8_t card_pic_id = raw_card + 10;
+[v _card_pic_id `uc ~T0 @X0 1 a ]
+[e = _card_pic_id -> + -> _raw_card `i -> 10 `i `uc ]
+"109
+[; ;blackjack.c: 109:     char cmd[32];
+[v _cmd `uc ~T0 @X0 -> 32 `i a ]
+"110
+[; ;blackjack.c: 110:     sprintf(cmd, "p%d.pic=%d", target_p_index, card_pic_id);
+[e ( _sprintf (1 , , (. , &U _cmd :s 1C -> _target_p_index `i -> _card_pic_id `i ]
+"111
+[; ;blackjack.c: 111:     Next_Send(cmd);
+[e ( _Next_Send (1 -> &U _cmd `*Cuc ]
+"113
+[; ;blackjack.c: 113:     if (raw_card > 10) {
+[e $ ! > -> _raw_card `i -> 10 `i 419  ]
+{
+"114
+[; ;blackjack.c: 114:         return 10;
+[e ) -> -> 10 `i `uc ]
+[e $UE 418  ]
+"115
+[; ;blackjack.c: 115:     }
+}
+[e $U 420  ]
+"117
+[; ;blackjack.c: 117:     else if (raw_card == 1 && p_score <= 11) {
+[e :U 419 ]
+[e $ ! && == -> _raw_card `i -> 1 `i <= -> _p_score `i -> 11 `i 421  ]
+{
+"118
+[; ;blackjack.c: 118:         return 11;
+[e ) -> -> 11 `i `uc ]
+[e $UE 418  ]
+"119
+[; ;blackjack.c: 119:     }
+}
+[e :U 421 ]
+[e :U 420 ]
+"120
+[; ;blackjack.c: 120:     return raw_card;
+[e ) _raw_card ]
+[e $UE 418  ]
+"121
+[; ;blackjack.c: 121: }
+[e :UE 418 ]
+}
+"124
+[; ;blackjack.c: 124: void Penalty() {
 [v _Penalty `(v ~T0 @X0 1 ef ]
 {
 [e :U _Penalty ]
 [f ]
-"81
-[; ;blackjack.c: 81:     lives--;
+"125
+[; ;blackjack.c: 125:     lives--;
 [e -- _lives -> -> 1 `i `uc ]
-"82
-[; ;blackjack.c: 82:     LATD = (LATD & 0xF8) | ((1 << lives) - 1);
+"126
+[; ;blackjack.c: 126:     LATD = (LATD & 0xF8) | ((1 << lives) - 1);
 [e = _LATD -> | & -> _LATD `i -> 248 `i - << -> 1 `i -> _lives `i -> 1 `i `uc ]
-"83
-[; ;blackjack.c: 83:     LATCbits.LATC1 = 1; _delay((unsigned long)((500)*(20000000/4000.0))); LATCbits.LATC1 = 0;
+"127
+[; ;blackjack.c: 127:     LATCbits.LATC1 = 1; _delay((unsigned long)((500)*(20000000/4000.0))); LATCbits.LATC1 = 0;
 [e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-"84
-[; ;blackjack.c: 84:     servo_pos = 5 + (rand() % 20);
+"128
+[; ;blackjack.c: 128:     servo_pos = 5 + (rand() % 20);
 [e = _servo_pos -> + -> 5 `i % ( _rand ..  -> 20 `i `uc ]
-"85
-[; ;blackjack.c: 85:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+"130
+[; ;blackjack.c: 130:     char l_cmd[16];
+[v _l_cmd `uc ~T0 @X0 -> 16 `i a ]
+"131
+[; ;blackjack.c: 131:     sprintf(l_cmd, "n_lives.val=%d", lives);
+[e ( _sprintf (1 , (. , &U _l_cmd :s 2C -> _lives `i ]
+"132
+[; ;blackjack.c: 132:     Next_Send(l_cmd);
+[e ( _Next_Send (1 -> &U _l_cmd `*Cuc ]
+"133
+[; ;blackjack.c: 133:     _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"86
-[; ;blackjack.c: 86: }
-[e :UE 411 ]
+"134
+[; ;blackjack.c: 134: }
+[e :UE 422 ]
+}
+"137
+[; ;blackjack.c: 137: void Reset_Round() {
+[v _Reset_Round `(v ~T0 @X0 1 ef ]
+{
+[e :U _Reset_Round ]
+[f ]
+"138
+[; ;blackjack.c: 138:     p_score = 0;
+[e = _p_score -> -> 0 `i `uc ]
+"139
+[; ;blackjack.c: 139:     d_score = 0;
+[e = _d_score -> -> 0 `i `uc ]
+"140
+[; ;blackjack.c: 140:     Next_Send("t_player.txt=\"0\"");
+[e ( _Next_Send (1 :s 3C ]
+"141
+[; ;blackjack.c: 141:     Next_Send("t_dealer.txt=\"0\"");
+[e ( _Next_Send (1 :s 4C ]
+"142
+[; ;blackjack.c: 142:     Next_Send("t_result.txt=\"\"");
+[e ( _Next_Send (1 :s 5C ]
+"143
+[; ;blackjack.c: 143: }
+[e :UE 423 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"88
-[; ;blackjack.c: 88: void main() {
+"146
+[; ;blackjack.c: 146: void main() {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"89
-[; ;blackjack.c: 89:     TRISB = 0xF0; INTCON2bits.RBPU = 0;
+"147
+[; ;blackjack.c: 147:     TRISB = 0xF0; INTCON2bits.RBPU = 0;
 [e = _TRISB -> -> 240 `i `uc ]
 [e = . . _INTCON2bits 2 3 -> -> 0 `i `uc ]
-"90
-[; ;blackjack.c: 90:     TRISCbits.TRISC1 = 0; TRISCbits.TRISC2 = 0; TRISD &= 0xF8;
+"148
+[; ;blackjack.c: 148:     TRISCbits.TRISC1 = 0; TRISCbits.TRISC2 = 0; TRISD &= 0xF8;
 [e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
 [e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
 [e =& _TRISD -> -> 248 `i `Vuc ]
-"91
-[; ;blackjack.c: 91:     T1CON = 0x01; PIE1bits.TMR1IE = 1; INTCONbits.GIE = 1; INTCONbits.PEIE = 1;
+"149
+[; ;blackjack.c: 149:     UART_Init();
+[e ( _UART_Init ..  ]
+"150
+[; ;blackjack.c: 150:     T1CON = 0x01; PIE1bits.TMR1IE = 1; INTCONbits.GIE = 1; INTCONbits.PEIE = 1;
 [e = _T1CON -> -> 1 `i `uc ]
 [e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"93
-[; ;blackjack.c: 93:     Lcd_Init();
-[e ( _Lcd_Init ..  ]
-"94
-[; ;blackjack.c: 94:     srand(500);
+"152
+[; ;blackjack.c: 152:     srand(500);
 [e ( _srand (1 -> -> 500 `i `ui ]
-"96
-[; ;blackjack.c: 96:     while(1) {
-[e :U 414 ]
+"153
+[; ;blackjack.c: 153:     _delay((unsigned long)((500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"154
+[; ;blackjack.c: 154:     Reset_Round();
+[e ( _Reset_Round ..  ]
+"156
+[; ;blackjack.c: 156:     while(1) {
+[e :U 426 ]
 {
-"97
-[; ;blackjack.c: 97:         if(lives == 0) {
-[e $ ! == -> _lives `i -> 0 `i 416  ]
+"158
+[; ;blackjack.c: 158:         if(lives == 0) {
+[e $ ! == -> _lives `i -> 0 `i 428  ]
 {
-"98
-[; ;blackjack.c: 98:             Lcd_Cmd(0x01); Lcd_Print("GAME OVER!");
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[e ( _Lcd_Print (1 :s 1C ]
-"99
-[; ;blackjack.c: 99:             while(Get_Key() != 'C');
-[e $U 417  ]
-[e :U 418 ]
-[e :U 417 ]
-[e $ != -> ( _Get_Key ..  `ui -> 67 `ui 418  ]
-[e :U 419 ]
-"100
-[; ;blackjack.c: 100:             lives = 3; p_score = 0;
+"159
+[; ;blackjack.c: 159:             Next_Send("t_result.txt=\"GAME OVER!\"");
+[e ( _Next_Send (1 :s 6C ]
+"160
+[; ;blackjack.c: 160:             while(Get_Key() != 'C');
+[e $U 429  ]
+[e :U 430 ]
+[e :U 429 ]
+[e $ != -> ( _Get_Key ..  `ui -> 67 `ui 430  ]
+[e :U 431 ]
+"161
+[; ;blackjack.c: 161:             lives = 3;
 [e = _lives -> -> 3 `i `uc ]
-[e = _p_score -> -> 0 `i `uc ]
-"101
-[; ;blackjack.c: 101:         }
-}
-[e :U 416 ]
-"103
-[; ;blackjack.c: 103:         Lcd_Cmd(0x01); Lcd_Print("SKOR:");
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[e ( _Lcd_Print (1 :s 2C ]
-"104
-[; ;blackjack.c: 104:         char s[5]; sprintf(s, "%d", p_score); Lcd_Print(s);
-[v _s `uc ~T0 @X0 -> 5 `i a ]
-[e ( _sprintf (1 , (. , &U _s :s 3C -> _p_score `i ]
-[e ( _Lcd_Print (1 -> &U _s `*Cuc ]
-"105
-[; ;blackjack.c: 105:         Lcd_Cmd(0xC0); Lcd_Print("7:HIT 8:STAND");
-[e ( _Lcd_Cmd (1 -> -> 192 `i `uc ]
-[e ( _Lcd_Print (1 :s 4C ]
-"107
-[; ;blackjack.c: 107:         char k = 0;
-[v _k `uc ~T0 @X0 1 a ]
-[e = _k -> -> 0 `i `uc ]
-"108
-[; ;blackjack.c: 108:         while(!(k = Get_Key())); _delay((unsigned long)((300)*(20000000/4000.0)));
-[e $U 420  ]
-[e :U 421 ]
-[e :U 420 ]
-[e $ ! != -> = _k ( _Get_Key ..  `i -> 0 `i 421  ]
-[e :U 422 ]
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"110
-[; ;blackjack.c: 110:         if(k == '7') {
-[e $ ! == -> _k `ui -> 55 `ui 423  ]
-{
-"111
-[; ;blackjack.c: 111:             p_score += (rand() % 10) + 1;
-[e =+ _p_score -> + % ( _rand ..  -> 10 `i -> 1 `i `uc ]
-"112
-[; ;blackjack.c: 112:             if(p_score > 21) {
-[e $ ! > -> _p_score `i -> 21 `i 424  ]
-{
-"113
-[; ;blackjack.c: 113:                 Lcd_Cmd(0x01); Lcd_Print("BUST! 21 GECTI");
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[e ( _Lcd_Print (1 :s 5C ]
-"114
-[; ;blackjack.c: 114:                 Penalty(); p_score = 0;
-[e ( _Penalty ..  ]
-[e = _p_score -> -> 0 `i `uc ]
-"115
-[; ;blackjack.c: 115:             }
-}
-[e :U 424 ]
-"116
-[; ;blackjack.c: 116:         } else if(k == '8') {
-}
-[e $U 425  ]
-[e :U 423 ]
-[e $ ! == -> _k `ui -> 56 `ui 426  ]
-{
-"117
-[; ;blackjack.c: 117:             d_score = 15 + (rand() % 7);
-[e = _d_score -> + -> 15 `i % ( _rand ..  -> 7 `i `uc ]
-"118
-[; ;blackjack.c: 118:             if(d_score > 21 || p_score > d_score) {
-[e $ ! || > -> _d_score `i -> 21 `i > -> _p_score `i -> _d_score `i 427  ]
-{
-"119
-[; ;blackjack.c: 119:                 Lcd_Cmd(0x01); Lcd_Print("KAZANDIN!");
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[e ( _Lcd_Print (1 :s 6C ]
-"120
-[; ;blackjack.c: 120:             } else {
-}
-[e $U 428  ]
-[e :U 427 ]
-{
-"121
-[; ;blackjack.c: 121:                 Lcd_Cmd(0x01); Lcd_Print("KASA KAZANDI");
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[e ( _Lcd_Print (1 :s 7C ]
-"122
-[; ;blackjack.c: 122:                 Penalty();
-[e ( _Penalty ..  ]
-"123
-[; ;blackjack.c: 123:             }
+"162
+[; ;blackjack.c: 162:             LATD = 0x07;
+[e = _LATD -> -> 7 `i `uc ]
+"163
+[; ;blackjack.c: 163:             Reset_Round();
+[e ( _Reset_Round ..  ]
+"164
+[; ;blackjack.c: 164:         }
 }
 [e :U 428 ]
-"124
-[; ;blackjack.c: 124:             p_score = 0; _delay((unsigned long)((2000)*(20000000/4000.0)));
-[e = _p_score -> -> 0 `i `uc ]
+"166
+[; ;blackjack.c: 166:         char k = Get_Key();
+[v _k `uc ~T0 @X0 1 a ]
+[e = _k ( _Get_Key ..  ]
+"167
+[; ;blackjack.c: 167:         if(k == '7') {
+[e $ ! == -> _k `ui -> 55 `ui 432  ]
+{
+"168
+[; ;blackjack.c: 168:             uint8_t raw_card = (rand() % 13) + 1;
+[v _raw_card `uc ~T0 @X0 1 a ]
+[e = _raw_card -> + % ( _rand ..  -> 13 `i -> 1 `i `uc ]
+"169
+[; ;blackjack.c: 169:             uint8_t points = (raw_card > 10) ? 10 : raw_card;
+[v _points `uc ~T0 @X0 1 a ]
+[e = _points -> ? > -> _raw_card `i -> 10 `i : -> 10 `i -> _raw_card `i `uc ]
+"170
+[; ;blackjack.c: 170:             p_score += points;
+[e =+ _p_score -> _points `uc ]
+"173
+[; ;blackjack.c: 173:             char cmd[32];
+[v _cmd `uc ~T0 @X0 -> 32 `i a ]
+"174
+[; ;blackjack.c: 174:             sprintf(cmd, "t_player.txt=\"%d\"", p_score);
+[e ( _sprintf (1 , (. , &U _cmd :s 7C -> _p_score `i ]
+"175
+[; ;blackjack.c: 175:             Next_Send(cmd);
+[e ( _Next_Send (1 -> &U _cmd `*Cuc ]
+"177
+[; ;blackjack.c: 177:             if(p_score > 21) {
+[e $ ! > -> _p_score `i -> 21 `i 433  ]
+{
+"178
+[; ;blackjack.c: 178:                 Next_Send("t_result.txt=\"BUST! 21 GECTI\"");
+[e ( _Next_Send (1 :s 8C ]
+"179
+[; ;blackjack.c: 179:                 Penalty();
+[e ( _Penalty ..  ]
+"180
+[; ;blackjack.c: 180:                 _delay((unsigned long)((2000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"125
-[; ;blackjack.c: 125:         }
+"181
+[; ;blackjack.c: 181:                 Reset_Round();
+[e ( _Reset_Round ..  ]
+"182
+[; ;blackjack.c: 182:             }
 }
-[e :U 426 ]
+[e :U 433 ]
+"183
+[; ;blackjack.c: 183:             _delay((unsigned long)((300)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"184
+[; ;blackjack.c: 184:         }
+}
+[e $U 434  ]
+"185
+[; ;blackjack.c: 185:         else if(k == '8') {
+[e :U 432 ]
+[e $ ! == -> _k `ui -> 56 `ui 435  ]
+{
+"186
+[; ;blackjack.c: 186:             while(d_score < 17) {
+[e $U 436  ]
+[e :U 437 ]
+{
+"187
+[; ;blackjack.c: 187:                 uint8_t d_raw = (rand() % 13) + 1;
+[v _d_raw `uc ~T0 @X0 1 a ]
+[e = _d_raw -> + % ( _rand ..  -> 13 `i -> 1 `i `uc ]
+"188
+[; ;blackjack.c: 188:                 d_score += (d_raw > 10) ? 10 : d_raw;
+[e =+ _d_score -> ? > -> _d_raw `i -> 10 `i : -> 10 `i -> _d_raw `i `uc ]
+"189
+[; ;blackjack.c: 189:             }
+}
+[e :U 436 ]
+"186
+[; ;blackjack.c: 186:             while(d_score < 17) {
+[e $ < -> _d_score `i -> 17 `i 437  ]
+[e :U 438 ]
+"192
+[; ;blackjack.c: 192:             char cmd[32];
+[v _cmd `uc ~T0 @X0 -> 32 `i a ]
+"193
+[; ;blackjack.c: 193:             sprintf(cmd, "t_dealer.txt=\"%d\"", d_score);
+[e ( _sprintf (1 , (. , &U _cmd :s 9C -> _d_score `i ]
+"194
+[; ;blackjack.c: 194:             Next_Send(cmd);
+[e ( _Next_Send (1 -> &U _cmd `*Cuc ]
+"197
+[; ;blackjack.c: 197:             if(d_score > 21 || p_score > d_score) {
+[e $ ! || > -> _d_score `i -> 21 `i > -> _p_score `i -> _d_score `i 439  ]
+{
+"198
+[; ;blackjack.c: 198:                 Next_Send("t_result.txt=\"KAZANDIN!\"");
+[e ( _Next_Send (1 :s 10C ]
+"199
+[; ;blackjack.c: 199:             } else {
+}
+[e $U 440  ]
+[e :U 439 ]
+{
+"200
+[; ;blackjack.c: 200:                 Next_Send("t_result.txt=\"KAYBETTIN!\"");
+[e ( _Next_Send (1 :s 11C ]
+"201
+[; ;blackjack.c: 201:                 Penalty();
+[e ( _Penalty ..  ]
+"202
+[; ;blackjack.c: 202:             }
+}
+[e :U 440 ]
+"203
+[; ;blackjack.c: 203:             _delay((unsigned long)((3000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"204
+[; ;blackjack.c: 204:             Reset_Round();
+[e ( _Reset_Round ..  ]
+"205
+[; ;blackjack.c: 205:         }
+}
+[e :U 435 ]
+[e :U 434 ]
+"206
+[; ;blackjack.c: 206:     }
+}
 [e :U 425 ]
-"126
-[; ;blackjack.c: 126:     }
-}
-[e :U 413 ]
-[e $U 414  ]
-[e :U 415 ]
-"127
-[; ;blackjack.c: 127: }
-[e :UE 412 ]
+[e $U 426  ]
+[e :U 427 ]
+"207
+[; ;blackjack.c: 207: }
+[e :UE 424 ]
 }
 [p f _sprintf 8388736 ]
-[a 3C 37 100 0 ]
-[a 5C 66 85 83 84 33 32 50 49 32 71 69 67 84 73 0 ]
-[a 7C 75 65 83 65 32 75 65 90 65 78 68 73 0 ]
-[a 4C 55 58 72 73 84 32 56 58 83 84 65 78 68 0 ]
-[a 2C 83 75 79 82 58 0 ]
-[a 1C 71 65 77 69 32 79 86 69 82 33 0 ]
-[a 6C 75 65 90 65 78 68 73 78 33 0 ]
+[a 2C 110 95 108 105 118 101 115 46 118 97 108 61 37 100 0 ]
+[a 1C 112 37 100 46 112 105 99 61 37 100 0 ]
+[a 7C 116 95 112 108 97 121 101 114 46 116 120 116 61 34 37 100 34 0 ]
+[a 9C 116 95 100 101 97 108 101 114 46 116 120 116 61 34 37 100 34 0 ]
+[a 8C 116 95 114 101 115 117 108 116 46 116 120 116 61 34 66 85 83 84 33 32 50 49 32 71 69 67 84 73 34 0 ]
+[a 3C 116 95 112 108 97 121 101 114 46 116 120 116 61 34 48 34 0 ]
+[a 4C 116 95 100 101 97 108 101 114 46 116 120 116 61 34 48 34 0 ]
+[a 5C 116 95 114 101 115 117 108 116 46 116 120 116 61 34 34 0 ]
+[a 6C 116 95 114 101 115 117 108 116 46 116 120 116 61 34 71 65 77 69 32 79 86 69 82 33 34 0 ]
+[a 11C 116 95 114 101 115 117 108 116 46 116 120 116 61 34 75 65 89 66 69 84 84 73 78 33 34 0 ]
+[a 10C 116 95 114 101 115 117 108 116 46 116 120 116 61 34 75 65 90 65 78 68 73 78 33 34 0 ]

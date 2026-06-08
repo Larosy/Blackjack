@@ -6065,34 +6065,25 @@ char *tempnam(const char *, const char *);
 
 
 #pragma config FOSC = HS, WDT = OFF, LVP = OFF, PBADEN = OFF
-# 19 "blackjack.c"
-void Lcd_Cmd(unsigned char cmd) {
-    LATEbits.LATE0 = 0;
-    LATD = (LATD & 0x0F) | (cmd & 0xF0);
-    LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-    LATD = (LATD & 0x0F) | (cmd << 4);
-    LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-    _delay((unsigned long)((2)*(20000000/4000.0)));
+# 52 "blackjack.c"
+void UART_Init(){
+    TRISCbits.TRISC6 = 0;
+    TRISCbits.TRISC7 = 1;
+    SPBRG = 129;
+    TXSTA = 0x24;
+    RCSTA = 0x90;
 }
 
-void Lcd_Write(unsigned char data) {
-    LATEbits.LATE0 = 1;
-    LATD = (LATD & 0x0F) | (data & 0xF0);
-    LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-    LATD = (LATD & 0x0F) | (data << 4);
-    LATEbits.LATE1 = 1; _delay((unsigned long)((40)*(20000000/4000000.0))); LATEbits.LATE1 = 0;
-    _delay((unsigned long)((2)*(20000000/4000.0)));
-}
+void Next_Send(const char* cmd){
+    while(*cmd){
+        while(!PIR1bits.TXIF);
+        TXREG = *cmd++;
+    }
 
-void Lcd_Print(const char* str) {
-    while(*str) Lcd_Write(*str++);
-}
-
-void Lcd_Init() {
-    TRISEbits.TRISE0 = 0; TRISEbits.TRISE1 = 0;
-    TRISD &= 0x0F;
-    _delay((unsigned long)((20)*(20000000/4000.0)));
-    Lcd_Cmd(0x02); Lcd_Cmd(0x28); Lcd_Cmd(0x0C); Lcd_Cmd(0x01);
+    for(int i = 0; i < 3; i++){
+        while(!PIR1bits.TXIF);
+        TXREG = 0xFF;
+    }
 }
 
 
@@ -6127,51 +6118,107 @@ void __attribute__((picinterrupt(("")))) ISR() {
 }
 
 
+uint8_t Draw_Card_To_Screen(uint8_t target_p_index) {
+
+    uint8_t raw_card = (rand() % 13) + 1;
+
+    uint8_t card_pic_id = raw_card + 10;
+    char cmd[32];
+    sprintf(cmd, "p%d.pic=%d", target_p_index, card_pic_id);
+    Next_Send(cmd);
+
+    if (raw_card > 10) {
+        return 10;
+    }
+
+    else if (raw_card == 1 && p_score <= 11) {
+        return 11;
+    }
+    return raw_card;
+}
+
+
 void Penalty() {
     lives--;
     LATD = (LATD & 0xF8) | ((1 << lives) - 1);
     LATCbits.LATC1 = 1; _delay((unsigned long)((500)*(20000000/4000.0))); LATCbits.LATC1 = 0;
     servo_pos = 5 + (rand() % 20);
+
+    char l_cmd[16];
+    sprintf(l_cmd, "n_lives.val=%d", lives);
+    Next_Send(l_cmd);
     _delay((unsigned long)((1000)*(20000000/4000.0)));
 }
+
+
+void Reset_Round() {
+    p_score = 0;
+    d_score = 0;
+    Next_Send("t_player.txt=\"0\"");
+    Next_Send("t_dealer.txt=\"0\"");
+    Next_Send("t_result.txt=\"\"");
+}
+
 
 void main() {
     TRISB = 0xF0; INTCON2bits.RBPU = 0;
     TRISCbits.TRISC1 = 0; TRISCbits.TRISC2 = 0; TRISD &= 0xF8;
+    UART_Init();
     T1CON = 0x01; PIE1bits.TMR1IE = 1; INTCONbits.GIE = 1; INTCONbits.PEIE = 1;
 
-    Lcd_Init();
     srand(500);
+    _delay((unsigned long)((500)*(20000000/4000.0)));
+    Reset_Round();
 
     while(1) {
+
         if(lives == 0) {
-            Lcd_Cmd(0x01); Lcd_Print("GAME OVER!");
+            Next_Send("t_result.txt=\"GAME OVER!\"");
             while(Get_Key() != 'C');
-            lives = 3; p_score = 0;
+            lives = 3;
+            LATD = 0x07;
+            Reset_Round();
         }
 
-        Lcd_Cmd(0x01); Lcd_Print("SKOR:");
-        char s[5]; sprintf(s, "%d", p_score); Lcd_Print(s);
-        Lcd_Cmd(0xC0); Lcd_Print("7:HIT 8:STAND");
-
-        char k = 0;
-        while(!(k = Get_Key())); _delay((unsigned long)((300)*(20000000/4000.0)));
-
+        char k = Get_Key();
         if(k == '7') {
-            p_score += (rand() % 10) + 1;
+            uint8_t raw_card = (rand() % 13) + 1;
+            uint8_t points = (raw_card > 10) ? 10 : raw_card;
+            p_score += points;
+
+
+            char cmd[32];
+            sprintf(cmd, "t_player.txt=\"%d\"", p_score);
+            Next_Send(cmd);
+
             if(p_score > 21) {
-                Lcd_Cmd(0x01); Lcd_Print("BUST! 21 GECTI");
-                Penalty(); p_score = 0;
+                Next_Send("t_result.txt=\"BUST! 21 GECTI\"");
+                Penalty();
+                _delay((unsigned long)((2000)*(20000000/4000.0)));
+                Reset_Round();
             }
-        } else if(k == '8') {
-            d_score = 15 + (rand() % 7);
+            _delay((unsigned long)((300)*(20000000/4000.0)));
+        }
+        else if(k == '8') {
+            while(d_score < 17) {
+                uint8_t d_raw = (rand() % 13) + 1;
+                d_score += (d_raw > 10) ? 10 : d_raw;
+            }
+
+
+            char cmd[32];
+            sprintf(cmd, "t_dealer.txt=\"%d\"", d_score);
+            Next_Send(cmd);
+
+
             if(d_score > 21 || p_score > d_score) {
-                Lcd_Cmd(0x01); Lcd_Print("KAZANDIN!");
+                Next_Send("t_result.txt=\"KAZANDIN!\"");
             } else {
-                Lcd_Cmd(0x01); Lcd_Print("KASA KAZANDI");
+                Next_Send("t_result.txt=\"KAYBETTIN!\"");
                 Penalty();
             }
-            p_score = 0; _delay((unsigned long)((2000)*(20000000/4000.0)));
+            _delay((unsigned long)((3000)*(20000000/4000.0)));
+            Reset_Round();
         }
     }
 }
