@@ -1,0 +1,4 @@
+# Firmware source is C; omit generated build outputs from language statistics.
+*.c linguist-language=C
+build/** linguist-generated=true
+dist/** linguist-generated=true
